@@ -8,11 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.ArrayList;
 
 public class TripadvisorTest {
     WebDriver driver;
@@ -35,7 +31,7 @@ public class TripadvisorTest {
         new MainPage(driver)
                 .searchAttractionsByLocation("Ярославль")
                 .showAllSpecialMuseum()
-                .showMuseumInfo()
+                .showMuseumInfoStream("ткань")
                 .createNewTripWithMuseum("Ярославль")
                 .checkNewTripCreated();
     }
