@@ -1,5 +1,6 @@
 package com.geekbrains.lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,6 +18,7 @@ public class AttractionsPage extends BasePage{
     @FindBy(xpath = "//a[contains(.,\"Спец\")]/ancestor::div[@data-tracking-title]/descendant::span[contains(.,\"Показать\")]")
     private WebElement showAllSpecialMuseumLink;
 
+    @Step("Переход на страницу со списком Специализированных музеев")
     public SpecialMuseumsPage showAllSpecialMuseum() {
         webDriverWait.until(ExpectedConditions.visibilityOf(showAllSpecialMuseumLink));
         actions.scrollToElement(showAllSpecialMuseumLink)

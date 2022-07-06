@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jul 06 21:37:25 MSK 2022","Wed Jul 06 21:37:47 MSK 2022","22154","","com.geekbrains.lesson6.TripadvisorTest","","com.geekbrains.lesson6.TripadvisorTest","addMuseumOfAttractionsToTrip","addMuseumOfAttractionsToTrip()",""

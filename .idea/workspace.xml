@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19b7c779-3f45-4162-aed5-01313575b45f" name="Changes" comment="lesson6">
+    <list default="true" id="19b7c779-3f45-4162-aed5-01313575b45f" name="Changes" comment="lesson6 - stream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/AllTripsInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/AllTripsInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/AttractionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/AttractionsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/MuseumInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/MuseumInfoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/SpecialMuseumsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/SpecialMuseumsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/TripInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/lesson6/TripInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/lesson6/TripadvisorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/lesson6/TripadvisorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson5" />
+        <entry key="$PROJECT_DIR$" value="lesson6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,20 +61,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\johns\IdeaProjects\GB-automation\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TripadvisorTest.addMuseumOfAttractionsToTrip (1)">
+  <component name="RunManager" selected="JUnit.TripadvisorTest.removeTrip (1)">
     <configuration name="TripadvisorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson3.TripadvisorExample" />
       <module name="GB-automation" />
@@ -149,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TripadvisorTest.addMuseumOfAttractionsToTrip (1)" />
         <item itemvalue="JUnit.TripadvisorTest.removeTrip (1)" />
+        <item itemvalue="JUnit.TripadvisorTest.addMuseumOfAttractionsToTrip (1)" />
         <item itemvalue="JUnit.TripadvisorTest.removeTrip" />
         <item itemvalue="JUnit.TripadvisorTest.addMuseumOfAttractionsToTrip" />
         <item itemvalue="Application.TripadvisorExample" />
@@ -222,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656902829810</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson6 - stream">
+      <created>1657053230704</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657053230704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +256,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson5" />
+                        <option value="lesson7" />
                       </list>
                     </value>
                   </entry>
@@ -265,7 +280,8 @@
     <MESSAGE value="project" />
     <MESSAGE value="lesson5" />
     <MESSAGE value="lesson6" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6" />
+    <MESSAGE value="lesson6 - stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6 - stream" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

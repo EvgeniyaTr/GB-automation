@@ -1,5 +1,6 @@
 package com.geekbrains.lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,6 +21,7 @@ public class SpecialMuseumsPage extends BasePage{
     @FindBy(xpath = "//h3")
     private List<WebElement> museums;
 
+    /*
     public MuseumInfoPage showMuseumInfo() {
         webDriverWait.until(ExpectedConditions.visibilityOf(showMuseumInfoByNameLink));
         actions.scrollToElement(showMuseumInfoByNameLink)
@@ -29,7 +31,9 @@ public class SpecialMuseumsPage extends BasePage{
         new SwitchToTab().switchToTab(driver,3);
         return new MuseumInfoPage(driver);
     }
+     */
 
+    @Step("Переход на страницу музея")
     public MuseumInfoPage showMuseumInfoStream(String museum) {
         WebElement selectedMuseum = museums.stream().filter(s -> s.getText().contains(museum)).findFirst().get();
         actions.scrollToElement(selectedMuseum)
