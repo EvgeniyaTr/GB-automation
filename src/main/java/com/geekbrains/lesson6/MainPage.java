@@ -1,5 +1,6 @@
 package com.geekbrains.lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -45,6 +46,7 @@ public class MainPage extends BasePage{
      */
 
 
+    @Step("Поиск по локации в категории Развлечения")
     public AttractionsPage searchAttractionsByLocation(String location) {
         attractionsMainMenu.click();
         searchLineInModalWindow.sendKeys(location);
@@ -53,6 +55,7 @@ public class MainPage extends BasePage{
         return new AttractionsPage(driver);
     }
 
+    @Step("Переход на страницу Поездки")
     public AllTripsInfoPage goToAllTripsInfo() {
         webDriverWait.until(ExpectedConditions.visibilityOf(tripsMainMenu)).click();
         return new AllTripsInfoPage(driver);

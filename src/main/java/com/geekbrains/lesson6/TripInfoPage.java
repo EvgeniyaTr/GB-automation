@@ -1,5 +1,6 @@
 package com.geekbrains.lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,6 +21,7 @@ public class TripInfoPage extends BasePage {
     @FindBy(xpath = "//button[.=\"Удалить\"]")
     private WebElement removeTripConfirmationButton;
 
+    @Step("Удаление поездки")
     public AllTripsInfoPage removeTrip() {
         webDriverWait.until(ExpectedConditions.visibilityOf(actionsToTripMenu)).click();
         webDriverWait.until(ExpectedConditions.visibilityOf(removeTripSubMenu)).click();

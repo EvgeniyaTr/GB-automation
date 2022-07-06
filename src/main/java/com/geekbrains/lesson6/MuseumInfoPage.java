@@ -1,6 +1,7 @@
 package com.geekbrains.lesson6;
 
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ public class MuseumInfoPage extends BasePage {
     @FindBy(xpath = "//div[.=\"Показать поездку\"]")
     private WebElement showTripPopup;
 
+    @Step("Добавление музея в новую поездку")
     public MuseumInfoPage createNewTripWithMuseum(String tripName) {
         webDriverWait.until(ExpectedConditions.elementToBeClickable(addMuseumToTripButton)).click();
         webDriverWait.until(ExpectedConditions.visibilityOf(inputTripNameField)).sendKeys(tripName);
@@ -32,6 +34,7 @@ public class MuseumInfoPage extends BasePage {
         return new MuseumInfoPage(driver);
     }
 
+    @Step("Проверка создания новой поездки")
     public void checkNewTripCreated() {
         Assertions.assertTrue(webDriverWait.until(ExpectedConditions.visibilityOf(showTripPopup)).isDisplayed());
     }
